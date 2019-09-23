@@ -35,6 +35,8 @@ body {
 	color: #FFF;
 	text-decoration: none;
 	transition: all 0.5s;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
 }
 #home a:hover {
 	background: rgba(255,255,255,0.8);
