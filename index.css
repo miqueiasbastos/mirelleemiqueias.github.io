@@ -32,9 +32,8 @@ html, body {
 	background-position: top center;
 }
 #noivado {
-	background: url('img/bg-noivado.jpg') fixed no-repeat;
+	background: url('img/bg-noivado.jpg') no-repeat top center fixed;
 	background-size: cover;
-	background-position: top center;
 }
 #noivado h1 {
 	color: #FFF;
