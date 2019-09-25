@@ -1,0 +1,245 @@
+
+@font-face {
+     font-family: RougeScript;
+     src: url('../src/fonts/RougeScript-Regular.ttf');
+}
+@font-face {
+     font-family: Butler;
+     src: url('../src/fonts/Butler_Regular.otf');
+}
+@font-face {
+     font-family: ChopinScript;
+     src: url('../src/fonts/ChopinScript.otf');
+}
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+.bg-black{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	min-width: 320px;
+	min-height: 100%;
+	padding: 50px 0;
+}
+#home { background-image: url('../img/bg-home.jpg'); }
+#noivos { background-image: url('../img/bg-noivado.jpg'); }
+#confirmar-presenca { background-image: url('../img/bg-presenca.jpg'); }
+#mapa { background-image: url('../img/bg-mapa.jpg'); }
+#padrinhos { background-image: url('../img/bg-padrinhos.jpg'); }
+#pajens-daminhas { background-image: url('../img/bg-pajens-daminhas.jpg'); }
+#home, #noivos, #padrinhos, #pajens-daminhas, #confirmar-presenca, #mapa {
+	display: flex;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	width: 100%;
+	min-width: 320px;
+	min-height: 100%;
+}
+
+.titulo {
+	font-family: RougeScript;
+	font-size: 60px;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0;
+	color: #FFF;
+}
+
+#frame-mapa {
+	width: 90%;
+	max-width: 900px;
+	padding-top: 20px;
+	height: 450px;
+}
+
+#btn-confirmar {
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+	width: 90%;
+	max-width: 200px;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+	padding: 10px;
+	color: #FFF;
+	text-decoration: none;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	transition: all 0.5s;
+	margin-top: 20px;
+}
+#btn-confirmar:hover {
+	background-color: rgba(255,255,255,0.8);
+	color: #333;
+	font-size: 18px;
+	padding: 15px;
+	max-width: 230px;
+	border-radius: 8px;
+}
+
+#logo {
+	width: 80%;
+	max-width: 800px;
+	margin-bottom: 20px;
+	
+}
+.moldura {
+	position: absolute;
+	width: 130px;
+}
+.a-top { top: 20px; }
+.a-left { left: 20px; }
+.a-right { right: 20px }
+.a-bottom { bottom: 20px; }
+
+.galeria-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	margin-top: 10px;
+}
+.img-container {
+	height: 280px;
+	width: 280px;
+	background-color: #FFF;
+	padding: 5px;
+	margin: 10px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.img-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+.galeria-pessoas {
+	width: 90%;
+	max-width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+
+.pessoas-item {
+	width: 40%;
+	background-color: #FFF;
+	padding: 5px;
+	margin: 2%;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+	
+}
+.pessoas-item-full {
+	width: 85%;
+	background-color: #FFF;
+	padding: 5px;
+	margin: 2%;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+	
+}
+
+.pessoas-item img, .pessoas-item-full img  {
+	width: 100%;
+}
+.pessoas-item p, .pessoas-item-full p {
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	margin:2px 0;
+	font-family: sans-serif;
+	color: #946129;
+	font-weight: bold;
+}
+
+
+
+
+#menu {
+	display: flex;
+	width: 100%;
+	z-index: 5000;
+	font-weight: normal;
+	align-items: center;
+	color: #FFF;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#menu a {
+	font-family: Butler;
+	display: block;
+	padding: 3px 10px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 20px;
+}
+#menu a:first-child {
+	border-left: none;
+}
+#menu a:hover {
+	text-decoration: underline;
+}
+.menu-normal {
+	position: relative;
+	top: 10px;
+}
+.menu-fixo {
+	position: fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+	top:0;
+	z-index:9999;
+}
+
+.p1{
+	font-family: Butler;
+	font-size: 30px;
+	color: #FFF;
+	padding: 0;
+	margin: 0;
+}
+.p2{
+	font-family: Butler;
+	font-size: 20px;
+	color: #FFF;
+	padding: 0;
+	margin: 0;
+	width: 90%;
+	text-align: center;
+}
+@media (max-width: 800px) {
+	.moldura { width: 100px; }
+	.a-top { top: 15px; }
+	.a-left { left: 15px; }
+	.a-right { right: 15px }
+	.a-bottom { bottom: 15px; }
+	.p1{ font-size: 25px; }
+	.p2{ font-size: 18px; }
+	#frame-mapa { height: 300px;}
+}
+@media (max-width: 600px) {
+	.moldura { width: 80px; }
+	.a-top { top: 10px; }
+	.a-left { left: 10px; }
+	.a-right { right: 10px; }
+	.a-bottom { bottom: 10px; }
+	.p1{ font-size: 20px; }
+	.p2{ font-size: 16px; }
+	#frame-mapa { height: 250px;}
+}
+
+
+
