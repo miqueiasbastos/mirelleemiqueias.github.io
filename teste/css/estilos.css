@@ -29,6 +29,17 @@ html, body {
 	min-height: 100%;
 	padding: 50px 0;
 }
+.content-all {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: calc(100% - 10px);
+	max-width: 900px;
+	min-width: 310px;
+	padding: 5px;
+	
+}
 #home { background-image: url('../img/bg-home.jpg'); }
 #noivos { background-image: url('../img/bg-noivado.jpg'); }
 #confirmar-presenca { background-image: url('../img/bg-presenca.jpg'); }
@@ -47,6 +58,95 @@ html, body {
 	min-height: 100%;
 }
 
+.noivos-galeria {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+}
+.noivos-item {
+	display: flex;
+	width: 48%;
+}
+.noivos-imagem {
+	display: flex;
+	width: calc(100% - 10px);
+	background-color: #FFF;
+	padding: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.noivos-imagem img {
+	display: flex;
+	width: 100%;
+}
+.noivos-item p {
+	width: 100%;
+	display: flex;
+	padding: 5px;
+	margin: 0;
+	font-family: Butler;
+	font-size: 20px;
+	color: #FFF;
+	text-align: justify;
+	
+}
+
+.pessoas-galeria {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.pessoas-item {
+	display: flex;
+	width: 48%;
+	margin-bottom: 2%;
+	justify-content: center;
+}
+.pessoas-item-full {
+	display: flex;
+	width: 100%;
+	margin-bottom: 2%;
+	justify-content: center;
+}
+.pessoas-imagem {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 10px);
+	background-color: #FFF;
+	padding: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.pessoas-imagem-menor {
+	display: flex;
+	flex-direction: column;
+	width: calc(48% - 10px);
+	background-color: #FFF;
+	padding: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.pessoas-imagem img, .pessoas-imagem-menor img {
+	display: flex;
+	width: 100%;
+}
+.pessoas-imagem p, .pessoas-imagem-menor p {
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	margin:2px 0;
+	margin-top: 5px;
+	font-family: sans-serif;
+	color: #946129;
+	font-weight: bold;
+}
+
+
+
+
 .titulo {
 	font-family: RougeScript;
 	font-size: 60px;
@@ -57,8 +157,7 @@ html, body {
 }
 
 #frame-mapa {
-	width: 90%;
-	max-width: 900px;
+	width: 100%;
 	padding-top: 20px;
 	height: 450px;
 }
@@ -103,68 +202,94 @@ html, body {
 .a-left { left: 20px; }
 .a-right { right: 20px }
 .a-bottom { bottom: 20px; }
+.g-90 { transform: rotate(90deg); }
+.g-180 { transform: rotate(180deg); }
+.g-90a { transform: rotate(-90deg); }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .galeria-container {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 	margin: auto;
 	margin-top: 10px;
 }
+.galeria-item, .galeria-item-full {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32%;
+	margin-bottom: 3%;
+}
+.galeria-item-full {
+	width: 100%;
+	margin-bottom: 0;
+}
+
 .img-container {
-	height: 280px;
-	width: 280px;
-	background-color: #FFF;
 	padding: 5px;
-	margin: 10px;
+	height: 0;
+	width: calc(100% - 10px);
+	padding-bottom: 100%;
+	background-color: #FFF;
+	position: relative;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.img-container-full {
+	display: flex;
+	padding: 5px;
+	height: 0;
+	width: 32%;
+	padding-bottom: 32%;
+	background-color: #FFF;
+	position: relative;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 .img-container img {
-	width: 100%;
-	height: 100%;
+	display: inline-block;
+	position: absolute;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	object-fit: cover;
+}
+.img-container-full img {
+	display: inline-block;
+	position: absolute;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
 	object-fit: cover;
 }
 
 
 
-.galeria-pessoas {
-	width: 90%;
-	max-width: 800px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: auto;
-}
 
-.pessoas-item {
-	width: 40%;
-	background-color: #FFF;
-	padding: 5px;
-	margin: 2%;
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-	
-}
-.pessoas-item-full {
-	width: 85%;
-	background-color: #FFF;
-	padding: 5px;
-	margin: 2%;
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-	
-}
 
-.pessoas-item img, .pessoas-item-full img  {
-	width: 100%;
-}
-.pessoas-item p, .pessoas-item-full p {
-	width: 100%;
-	text-align: center;
-	padding: 0;
-	margin:2px 0;
-	font-family: sans-serif;
-	color: #946129;
-	font-weight: bold;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -217,7 +342,7 @@ html, body {
 	color: #FFF;
 	padding: 0;
 	margin: 0;
-	width: 90%;
+	width: 100%;
 	text-align: center;
 }
 @media (max-width: 800px) {
@@ -227,19 +352,30 @@ html, body {
 	.a-right { right: 15px }
 	.a-bottom { bottom: 15px; }
 	.p1{ font-size: 25px; }
-	.p2{ font-size: 18px; }
+	.p2, .noivos-galeria p{ font-size: 18px; }
 	#frame-mapa { height: 300px;}
 }
+@media (max-width: 700px) {
+	.noivos-galeria {
+		flex-direction: column;
+	}
+	.noivos-item {
+		width: 100%
+	}
+}
 @media (max-width: 600px) {
+	#noivos-galeria {
+		flex-direction: column;
+	}
+	
 	.moldura { width: 80px; }
 	.a-top { top: 10px; }
 	.a-left { left: 10px; }
 	.a-right { right: 10px; }
 	.a-bottom { bottom: 10px; }
 	.p1{ font-size: 20px; }
-	.p2{ font-size: 16px; }
+	.p2, .noivos-galeria p{ font-size: 16px; }
 	#frame-mapa { height: 250px;}
 }
-
 
 
