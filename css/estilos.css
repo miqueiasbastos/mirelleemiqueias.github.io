@@ -1,3 +1,4 @@
+
 @font-face {
      font-family: RougeScript;
      src: url('../src/fonts/RougeScript-Regular.ttf');
@@ -18,40 +19,149 @@ html, body {
 }
 .bg-black{
 	display: flex;
-	position: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
+	min-width: 320px;
 	min-height: 100%;
+	padding: 50px 0;
 }
-#home {
-	background: url('../img/bg-home.jpg') fixed no-repeat;
-	background-size: cover;
-	background-position: top center;
-}
-#noivado {
-	background: url('../img/bg-noivado.jpg') fixed no-repeat;
-	background-size: cover;
-	background-position: top center;
-}
-#noivado h1 {
-	color: #FFF;
-	font-family: RougeScript;
-	font-size: 60px;
-	padding: 0;
-	margin: 0;
-	margin-top: 50px;
-	padding-bottom: 20px;
-	text-align: center;
-}
-.geral {
+.content-all {
 	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: calc(100% - 10px);
+	max-width: 900px;
+	min-width: 310px;
+	padding: 5px;
+	
+}
+#home { background-image: url('../img/bg-home.jpg'); }
+#noivos { background-image: url('../img/bg-noivado.jpg'); }
+#confirmar-presenca { background-image: url('../img/bg-presenca.jpg'); }
+#mapa { background-image: url('../img/bg-mapa.jpg'); }
+#padrinhos { background-image: url('../img/bg-padrinhos.jpg'); }
+#pajens-daminhas { background-image: url('../img/bg-pajens-daminhas.jpg'); }
+#home, #noivos, #padrinhos, #pajens-daminhas, #confirmar-presenca, #mapa {
+	display: flex;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	position: relative;
 	width: 100%;
+	min-width: 320px;
 	min-height: 100%;
 }
+
+.noivos-galeria {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+}
+.noivos-item {
+	display: flex;
+	width: 48%;
+}
+.noivos-imagem {
+	display: flex;
+	width: calc(100% - 10px);
+	background-color: #FFF;
+	padding: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.noivos-imagem img {
+	display: flex;
+	width: 100%;
+}
+.noivos-item p {
+	width: 100%;
+	display: flex;
+	padding: 5px;
+	margin: 0;
+	font-family: Butler;
+	font-size: 20px;
+	color: #FFF;
+	text-align: justify;
+	
+}
+
+.pessoas-galeria {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.pessoas-item {
+	display: flex;
+	width: 48%;
+	margin-bottom: 2%;
+	justify-content: center;
+}
+.pessoas-item-full {
+	display: flex;
+	width: 100%;
+	margin-bottom: 2%;
+	justify-content: center;
+}
+.pessoas-imagem {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 10px);
+	background-color: #FFF;
+	padding: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.pessoas-imagem-menor {
+	display: flex;
+	flex-direction: column;
+	width: calc(48% - 10px);
+	background-color: #FFF;
+	padding: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.pessoas-imagem img, .pessoas-imagem-menor img {
+	display: flex;
+	width: 100%;
+}
+.pessoas-imagem p, .pessoas-imagem-menor p {
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	margin:2px 0;
+	margin-top: 5px;
+	font-family: sans-serif;
+	color: #946129;
+	font-weight: bold;
+}
+
+
+
+
+.titulo {
+	font-family: RougeScript;
+	font-size: 60px;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0;
+	color: #FFF;
+}
+
+#frame-mapa {
+	width: 100%;
+	padding-top: 20px;
+	height: 450px;
+}
+
 #btn-confirmar {
 	font-family: sans-serif;
 	text-align: center;
@@ -67,19 +177,22 @@ html, body {
 	outline: none;
 	-webkit-tap-highlight-color: transparent;
 	transition: all 0.5s;
+	margin-top: 20px;
 }
-#home a:hover {
-	background: rgba(255,255,255,0.8);
+#btn-confirmar:hover {
+	background-color: rgba(255,255,255,0.8);
 	color: #333;
 	font-size: 18px;
 	padding: 15px;
 	max-width: 230px;
 	border-radius: 8px;
 }
+
 #logo {
 	width: 80%;
 	max-width: 800px;
-	padding-bottom: 50px;
+	margin-bottom: 20px;
+	
 }
 .moldura {
 	position: absolute;
@@ -89,37 +202,180 @@ html, body {
 .a-left { left: 20px; }
 .a-right { right: 20px }
 .a-bottom { bottom: 20px; }
+.g-90 { transform: rotate(90deg); }
+.g-180 { transform: rotate(180deg); }
+.g-90a { transform: rotate(-90deg); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.galeria-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 10px;
+}
+.galeria-item, .galeria-item-full {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32%;
+	margin-bottom: 3%;
+}
+.galeria-item-full {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.img-container {
+	padding: 5px;
+	height: 0;
+	width: calc(100% - 10px);
+	padding-bottom: 100%;
+	background-color: #FFF;
+	position: relative;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.img-container-full {
+	display: flex;
+	padding: 5px;
+	height: 0;
+	width: 32%;
+	padding-bottom: 32%;
+	background-color: #FFF;
+	position: relative;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.img-container img {
+	display: inline-block;
+	position: absolute;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	object-fit: cover;
+}
+.img-container-full img {
+	display: inline-block;
+	position: absolute;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu {
+	display: flex;
+	width: 100%;
+	z-index: 5000;
+	font-weight: normal;
+	align-items: center;
+	color: #FFF;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#menu a {
+	font-family: Butler;
+	display: block;
+	padding: 3px 10px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 20px;
+}
+#menu a:first-child {
+	border-left: none;
+}
+#menu a:hover {
+	text-decoration: underline;
+}
+.menu-normal {
+	position: relative;
+	top: 10px;
+}
+.menu-fixo {
+	position: fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+	top:0;
+	z-index:9999;
+}
+
+.p1{
+	font-family: Butler;
+	font-size: 30px;
+	color: #FFF;
+	padding: 0;
+	margin: 0;
+}
+.p2{
+	font-family: Butler;
+	font-size: 20px;
+	color: #FFF;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
 @media (max-width: 800px) {
 	.moldura { width: 100px; }
 	.a-top { top: 15px; }
 	.a-left { left: 15px; }
 	.a-right { right: 15px }
 	.a-bottom { bottom: 15px; }
+	.p1{ font-size: 25px; }
+	.p2, .noivos-galeria p{ font-size: 18px; }
+	#frame-mapa { height: 300px;}
+}
+@media (max-width: 700px) {
+	.noivos-galeria {
+		flex-direction: column;
+	}
+	.noivos-item {
+		width: 100%
+	}
 }
 @media (max-width: 600px) {
+	#noivos-galeria {
+		flex-direction: column;
+	}
+	
 	.moldura { width: 80px; }
 	.a-top { top: 10px; }
 	.a-left { left: 10px; }
 	.a-right { right: 10px; }
 	.a-bottom { bottom: 10px; }
+	.p1{ font-size: 20px; }
+	.p2, .noivos-galeria p{ font-size: 16px; }
+	#frame-mapa { height: 250px;}
 }
 
-.galeria-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: auto;
-}
-.img-container {
-	height: 300px;
-	width: 300px;
-	background-color: #FFF;
-	padding: 5px;
-	margin: 10px;
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-}
-.img-container img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
+
