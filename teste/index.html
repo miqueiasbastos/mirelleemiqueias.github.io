@@ -30,27 +30,9 @@
 		<script src="js/galeria.js"></script>
 		<script src="js/onload.js"></script>
 		<!-- Fim FancyBox -->
-		
-		<script>
-		$(document).ready(function(){
-		  $("a").on('click', function(event) {
-			if (this.hash !== "") {
-			  event.preventDefault();
-			  var hash = this.hash;
-			  $('html, body').animate({
-				scrollTop: $(hash).offset().top
-			  }, 800, function(){
-				window.location.hash = hash;
-			  });
-			}
-		  });
-		});
-		</script>
-		
 	</head>
 	<body onload="carregado();">
-	
-	<div id="onload-page" style="width: 100%; height: 100%; background: #FFF; background: radial-gradient(ellipse, #FFF 0%, #DDD 100%); position: fixed; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 9000; transition: all 0.5s;">
+	<!--div id="onload-page" style="width: 100%; height: 100%; background: #FFF; background: radial-gradient(ellipse, #FFF 0%, #DDD 100%); position: fixed; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 9000; transition: all 0.5s;">
 		<img src="img/moldura-dourada.png" class="moldura a-top a-left" />
 		<img src="img/moldura-dourada.png" class="moldura a-top a-right g-90" />
 		<img src="img/moldura-dourada.png" class="moldura a-bottom a-right g-180" />
@@ -58,9 +40,31 @@
 		
 		<img src="img/mirelle-e-miqueias.png" style="width: 90%; max-width: 500px;" />
 		<h1 style="font-size: 16px; color: #c5935d; padding: 0; padding-top: 10px; margin: 0; font-weight: normal; font-family: sans-serif">Carregando, aguarde...</h1>
+	</div-->
+	<div id="barra-menu">
+	<img src="img/mirelle-e-miqueias-branco.png" />
+		<a id="open-menu">
+			<?xml version="1.0" ?>
+			<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+			<svg fill="#FFF" height="20px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+			</svg>
+		</a>
+	</div>
+	<div id="menu-lateral">
+		<div id="header-menu-lateral">
+			<p>Mirelle e Miquéias</p><a id="close-menu">X</a>
+		</div>
+		<a class="item-menu-lateral" href="#">Início</a>
+		<a class="item-menu-lateral" href="#noivos">Noivos</a>
+		<a class="item-menu-lateral" href="#padrinhos">Padrinhos</a>
+		<a class="item-menu-lateral" href="#pajens-daminhas">Pajens e Daminhas</a>
+		<a class="item-menu-lateral" href="#confirmar-presenca">Confirme sua Presença</a>
+		<a class="item-menu-lateral" href="#mapa">Mapa</a>
 	</div>
 	
 	
+	<div id="conteudo">
 		<div id="home">
 			<div class="bg-black">
 				<img src="img/moldura.png" class="moldura a-top a-left" />
@@ -71,7 +75,7 @@
 				<p class="p1">11 de janeiro de 2020</p>
 				
 				<div id="menu" class="menu-normal">
-					<a href="#home">Início</a>
+					<a href="#" class="inicio">Início</a>
 					<a href="#noivos">Noivos</a>
 					<a href="#padrinhos">Padrinhos</a>
 					<a href="#pajens-daminhas">Pajens e Daminhas</a>
@@ -447,7 +451,7 @@
 							</div>
 						</div>
 					</div>
-					<h1 class="titulo">Dama das Alianças</h1>
+					<h1 class="titulo">Dama das alianças</h1>
 					<div class="pessoas-galeria">
 						<div class="pessoas-item-full">
 							<div class="pessoas-imagem">
@@ -491,10 +495,12 @@
 		
 		<div id="rodape"></div>
 		
+		</div>
 		<script>
-			altura = $('#noivado').position().top;
+			alturaNoivos = $('#noivos').position().top;
+
 			$(window).on('scroll', function() {
-				if($(window).scrollTop() >= altura) {
+				if($(window).scrollTop() >= alturaNoivos) {
 					$('#menu').removeClass('menu-normal');
 					$('#menu').addClass('menu-fixo');
 					
@@ -503,7 +509,33 @@
 					$('#menu').removeClass('menu-fixo');
 					$('#menu').addClass('menu-normal');
 				}
+
 			});
+			
+			$(document).ready(function () {
+				$("#open-menu").click(function () {
+						$("#menu-lateral").toggle();
+				});
+				$("#close-menu").click(function () {
+						$("#menu-lateral").toggle();
+				});
+				$(".item-menu-lateral").click(function () {
+						$("#menu-lateral").toggle();
+				});
+				  $("a").on('click', function(event) {
+					if (this.hash !== "") {
+					  event.preventDefault();
+					  var hash = this.hash;
+					  $('html, body').animate({
+						scrollTop: $(hash).offset().top
+					  }, 800, function(){
+						window.location.hash = hash;
+					  });
+					}
+				  });
+				});
+			
 		</script>
+		
 	</body>
 <html>
