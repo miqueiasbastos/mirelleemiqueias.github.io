@@ -532,21 +532,23 @@
 			<div class="bg-black">
 				<div class="content-all">
 					<h1 class="titulo">Recados!</h1>
-					<form id="formulario">
-						<div>
-							<label>Nome</label>
-							<input type="text" id="nome" placeholder="Digite seu nome">
-						</div>
-						<div>
-							<label>E-mail</label>
-							<input type="text" id="email" placeholder="Digite seu e-mail">
-						</div>
-						<div>
-							<label>Mensagem</label>
-							<textarea id="mensagem" rows="3" placeholder="Digite aqui sua mensagem..."></textarea>
-						</div>
-						<button type="submit" id="btnEnviar">Enviar</button>
-					</form>
+						<form id="formulario" class="formRecado">
+							<div class="formItem">
+								<label class="formLabel">Nome</label>
+								<input type="text" id="nome" placeholder="Digite seu nome" class="formInput">
+							</div>
+							<div class="formItem">
+								<label class="formLabel">E-mail</label>
+								<input type="text" id="email" placeholder="Digite seu e-mail" class="formInput">
+							</div>
+							<div class="formItem">
+								<label class="formLabel">Mensagem</label>
+								<textarea id="mensagem" rows="3" placeholder="Digite aqui sua mensagem..." class="formTextarea"></textarea>
+							</div>
+							<button type="submit" id="btnEnviar" class="formButtom">Enviar</button>
+						</form>
+					<div id="containerRecados">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -572,28 +574,32 @@
 			
 			$(document).ready(function () {
 				$("#open-menu").click(function () {
-						$("#menu-lateral").toggle();
+					$("#menu-lateral").toggle();
 				});
 				$("#close-menu").click(function () {
-						$("#menu-lateral").toggle();
+					$("#menu-lateral").toggle();
 				});
 				$(".item-menu-lateral").click(function () {
-						$("#menu-lateral").toggle();
+					$("#menu-lateral").toggle();
 				});
-				  $("a").on('click', function(event) {
+				$("a").on('click', function(event) {
 					if (this.hash !== "") {
-					  event.preventDefault();
-					  var hash = this.hash;
-					  $('html, body').animate({
-						scrollTop: $(hash).offset().top
-					  }, 800, function(){
-						window.location.hash = hash;
-					  });
+						event.preventDefault();
+						var hash = this.hash;
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top
+						}, 800, function(){
+							window.location.hash = hash;
+						});
 					}
-				  });
 				});
+				lerRecados();
+			});
 
 		</script>
-		
+		<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+		<script src="js/recados.js"></script>
 	</body>
 </html>
