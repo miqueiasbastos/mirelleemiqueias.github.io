@@ -10,7 +10,6 @@ html, body {
 .bg-black{
 	display: flex;
 	display: -webkit-flex;
-	flex: 1;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -18,133 +17,9 @@ html, body {
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
 	min-width: 320px;
-	min-height: calc(100vh - 100px);
+	min-height: 100%;
 	padding: 50px 0;
 }
-
-#logo {
-	width: 80%;
-	max-width: 800px;
-	margin-bottom: 20px;
-	
-}
-.moldura {
-	position: absolute;
-	width: 130px;
-}
-.a-top { top: 20px; }
-.a-left { left: 20px; }
-.a-right { right: 20px }
-.a-bottom { bottom: 20px; }
-.g-90 { transform: rotate(90deg); }
-.g-180 { transform: rotate(180deg); }
-.g-90a { transform: rotate(-90deg); }
-
-
-
-
-
-
-
-
-
-
-
-#menu {
-	display: flex;
-	width: 100%;
-	z-index: 5000;
-	font-weight: normal;
-	align-items: center;
-	color: #FFF;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-#menu a {
-	font-family: Butler;
-	display: block;
-	padding: 3px 10px;
-	color: #FFF;
-	text-decoration: none;
-	font-size: 20px;
-}
-#menu a:first-child {
-	border-left: none;
-}
-#menu a:hover {
-	text-decoration: underline;
-}
-.menu-normal {
-	position: relative;
-	top: 10px;
-}
-.menu-fixo {
-	position: fixed;
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
-	top: 0;
-	z-index: 9999;
-}
-
-
-
-
-
-
-
-
-.galeria-container {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: auto;
-	margin-top: 10px;
-}
-.galeria-item, .galeria-item-full {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 32%;
-	margin-bottom: 3%;
-}
-.galeria-item-full {
-	width: 100%;
-	margin-bottom: 0;
-}
-.img-container {
-	padding: 5px;
-	height: 0;
-	width: calc(100% - 10px);
-	padding-bottom: 100%;
-	background-color: #FFF;
-	position: relative;
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-}
-.img-container-full {
-	display: flex;
-	padding: 5px;
-	height: 0;
-	width: 32%;
-	padding-bottom: 32%;
-	background-color: #FFF;
-	position: relative;
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-}
-.img-container img {
-	display: inline-block;
-	position: absolute;
-	width: calc(100% - 10px);
-	height: calc(100% - 10px);
-	object-fit: cover;
-}
-.img-container-full img {
-	display: inline-block;
-	position: absolute;
-	width: calc(100% - 10px);
-	height: calc(100% - 10px);
-	object-fit: cover;
-}
-
 .content-all {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -325,9 +200,75 @@ html, body {
 	border-radius: 8px;
 }
 
-
-
-
+#logo {
+	width: 80%;
+	max-width: 800px;
+	margin-bottom: 20px;
+	
+}
+.moldura {
+	position: absolute;
+	width: 130px;
+}
+.a-top { top: 20px; }
+.a-left { left: 20px; }
+.a-right { right: 20px }
+.a-bottom { bottom: 20px; }
+.g-90 { transform: rotate(90deg); }
+.g-180 { transform: rotate(180deg); }
+.g-90a { transform: rotate(-90deg); }
+.galeria-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 10px;
+}
+.galeria-item, .galeria-item-full {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32%;
+	margin-bottom: 3%;
+}
+.galeria-item-full {
+	width: 100%;
+	margin-bottom: 0;
+}
+.img-container {
+	padding: 5px;
+	height: 0;
+	width: calc(100% - 10px);
+	padding-bottom: 100%;
+	background-color: #FFF;
+	position: relative;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.img-container-full {
+	display: flex;
+	padding: 5px;
+	height: 0;
+	width: 32%;
+	padding-bottom: 32%;
+	background-color: #FFF;
+	position: relative;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.img-container img {
+	display: inline-block;
+	position: absolute;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	object-fit: cover;
+}
+.img-container-full img {
+	display: inline-block;
+	position: absolute;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	object-fit: cover;
+}
 #barra-menu {
 	display: none;
 	width: 100%;
@@ -408,7 +349,40 @@ html, body {
 #header-menu-lateral a:hover {
 	background-color: #a8835a;
 }
-
+#menu {
+	display: flex;
+	width: 100%;
+	z-index: 5000;
+	font-weight: normal;
+	align-items: center;
+	color: #FFF;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#menu a {
+	font-family: Butler;
+	display: block;
+	padding: 3px 10px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 20px;
+}
+#menu a:first-child {
+	border-left: none;
+}
+#menu a:hover {
+	text-decoration: underline;
+}
+.menu-normal {
+	position: relative;
+	top: 10px;
+}
+.menu-fixo {
+	position: fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+	top: 0;
+	z-index: 9999;
+}
 
 
 .formRecado {
