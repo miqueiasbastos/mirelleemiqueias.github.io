@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="author" content="LiveSystem Soluções" />
+	<meta name="description" content="Conheça um pouco de nossa hitória, e fique por dentro de tudo o que acontecerá no dia mais esperado de nossas vidas!" />
+	<meta name="keywords" content="casamento, festa, amor" />
+	<meta name="theme-color" content="#946129" />
+	<title>Mirelle & Miquéias - Site dos Noivos</title>
+	
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:type" content="convite" />
+	<meta property="og:title" content="Mirelle & Miquéias - Site dos Noivos" />
+	<meta property="og:description" content="Conheça um pouco de nossa hitória, e fique por dentro de tudo o que acontecerá no dia mais esperado de nossas vidas!" />
+	<meta property="og:url" content="https://www.mirelleemiqueias.com.br" />
+	<meta property="og:image" content="https://mirelleemiqueias.com.br/img/thumb.jpg" />
+	<meta property="og:site_name" content="Mirelle & Miquéias - Site dos Noivos" />
+
+	<link rel="stylesheet" type="text/css" href="lib/universal-parallax/universal-parallax.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<link rel="stylesheet" type="text/css" href="lib/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body onload="carregado();">
+	<!-- Início página preload -->
+	<div id="onload-page" style="width: 100%; height: 100%; background: #FFF; background: radial-gradient(ellipse, #FFF 0%, #DDD 100%); position: fixed; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 9000; transition: all 0.5s; top: 0; left: 0">
+		<img src="img/moldura-dourada.png" class="moldura a-top a-left" />
+		<img src="img/moldura-dourada.png" class="moldura a-top a-right g-90" />
+		<img src="img/moldura-dourada.png" class="moldura a-bottom a-right g-180" />
+		<img src="img/moldura-dourada.png" class="moldura a-bottom a-left g-90a" />
+
+		<img src="img/mirelle-e-miqueias.png" style="width: 90%; max-width: 500px;" />
+		<h1 style="font-size: 16px; color: #c5935d; padding: 0; padding-top: 10px; margin: 0; font-weight: normal; font-family: sans-serif">Carregando, aguarde...</h1>
+	</div>
+	<!-- Fim página preload -->
+	
+	<!-- Início menu mobile -->
+	<div id="barra-menu">
+		<img src="img/mirelle-e-miqueias-branco.png" />
+		<a id="open-menu">
+			<?xml version="1.0" ?>
+			<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+			<svg fill="#FFF" height="38px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+			</svg>
+		</a>
+	</div>
+	<div id="menu-lateral">
+		<div id="header-menu-lateral">
+			<img src="img/mirelle-e-miqueias-branco.png" style="height: 45px; margin: 7px 0;" /><a id="close-menu">X</a>
+		</div>
+		<a class="item-menu-lateral" href="#">Início</a>
+		<a class="item-menu-lateral" href="#noivos">Noivos</a>
+		<a class="item-menu-lateral" href="#padrinhos">Padrinhos</a>
+		<a class="item-menu-lateral" href="#pajens-daminhas">Pajens e Daminhas</a>
+		<a class="item-menu-lateral" href="#dicas">Dicas</a>
+		<a class="item-menu-lateral" href="#confirmar-presenca">Confirme sua Presença</a>
+		<a class="item-menu-lateral" href="#mapa">Mapa</a>
+		<a class="item-menu-lateral" href="#recados">Recados</a>
+	</div>
+	<!-- Fim menu mobile -->
+	
+	<div class="container" id="home">
+		<div class="bg-black">
+			<img src="img/moldura.png" class="moldura a-top a-left" />
+			<img src="img/moldura.png" class="moldura a-top a-right g-90" />
+			<img src="img/moldura.png" class="moldura a-bottom a-right g-180" />
+			<img src="img/moldura.png" class="moldura a-bottom a-left g-90a" />
+			<img src="img/mirelle-e-miqueias-branco.png" id="logo" />
+			<p class="p1">11 de janeiro de 2020</p>
+			<div id="menu" class="menu-normal">
+				<a href="#" class="inicio">Início</a>
+				<a href="#noivos">Noivos</a>
+				<a href="#padrinhos">Padrinhos</a>
+				<a href="#pajens-daminhas">Pajens e Daminhas</a>
+				<a href="#dicas">Dicas</a>
+				<a href="#confirmar-presenca">Confirmar Presença</a>
+				<a href="#mapa">Mapa</a>
+				<a href="#recados">Recados</a>
+			</div>
+		</div>
+		<div class="parallax" data-parallax-image="img/bg-home.jpg"></div>
+	</div>
+		
+	<div class="container" id="noivos">
+		<div class="bg-black">
+			<div class="content-all">
+				<h1 class="titulo">A noiva</h1>
+				<div class="noivos-galeria">
+					<div class="noivos-item">
+						<div class="noivos-imagem">
+							<img src="img/mirelle.jpg" />
+						</div>
+					</div>
+					<div class="noivos-item">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						</p>
+					</div>
+				</div>
+				<h1 class="titulo">Família da noiva</h1>
+				<div class="pessoas-galeria">
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem">
+							<a class="fancybox-thumbs" data-fancybox-group="familia-noiva" href="img/marinor-graca.jpg" title="Marinor e Maria das Graças - Pais"><img src="img/marinor-graca.jpg" /></a>
+							<p>Marinor e Maria das Graças - Pais</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<a class="fancybox-thumbs" data-fancybox-group="familia-noiva" href="img/p-marllone.jpg"><img src="img/p-marllone.jpg" /></a>
+							<p>Marllone - Irmão</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<a class="fancybox-thumbs" data-fancybox-group="familia-noiva" href="img/i-mirian-esther.jpg"><img src="img/i-mirian-esther.jpg" /></a>
+							<p>Mírian Esther - Irmã</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<a class="fancybox-thumbs" data-fancybox-group="familia-noiva" href="img/i-maxielle.jpg"><img src="img/i-maxielle.jpg" /></a>
+							<p>Maxielle - Irmã</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<a class="fancybox-thumbs" data-fancybox-group="familia-noiva" href="img/avatar.jpg"><img src="img/avatar.jpg" /></a>
+							<p>Mellissa - Irmã</p>
+						</div>
+					</div>
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem-menor">
+							<a class="fancybox-thumbs" data-fancybox-group="familia-noiva" href="img/i-marllise.jpg"><img src="img/i-marllise.jpg" /></a>
+							<p>Marllise - Irmã</p>
+						</div>
+					</div>
+				</div>
+				<h1 class="titulo">O noivo</h1>
+				<div class="noivos-galeria">
+					<div class="noivos-item">
+						<div class="noivos-imagem">
+							<img src="img/miqueias.jpg" />
+						</div>
+					</div>
+					<div class="noivos-item">
+						<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						</p>
+					</div>
+				</div>
+				<h1 class="titulo">Família do noivo</h1>
+				<div class="pessoas-galeria">
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem">
+							<img src="img/osias-doraci.jpg" />
+							<p>Osias e Dorací</p>
+						</div>
+					</div>
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem-menor">
+							<img src="img/p-oseias.jpg" />
+							<p>Oséias - Irmão</p>
+						</div>
+					</div>
+				</div>
+				<h1 class="titulo">Nossa história</h1>
+				<div class="pessoas-galeria">
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem">
+							<img src="img/miqueias-mirelle.jpg" />
+						</div>
+					</div>
+					<em class="p2" style="text-align: center; padding-bottom: 20px; padding-top: 10px;">
+						“De todos os presentes que Deus poderia nos dar, Ele escolheu o melhor... Deu-nos um ao outro.”
+					</em>
+					<p class="p2" style="text-align: justify;text-indent:4em; padding-bottom: 10px;">
+						Se soubéssemos as voltas e surpresas que estavam guardadas pra gente, nem nos nossos melhores sonhos conseguiríamos criar uma historia assim. Tudo começou no dia 29 de julho de 2017 em uma noite fria... Após um culto de Intercambio de Mocidade na Cidade de Serrolândia, dar-se início a nossa amizade. Foram meses de bate papo e conversas até altas horas, até que no dia 11 de novembro do mesmo ano, demos o primeiro passo, decidimos firmar um namoro. Durante este período passamos por muitos desafios, insegurança e incertezas, mas nunca deixamos de crer que Deus tinha um propósito maior do que podíamos imaginar.
+					</p>
+					<p class="p2" style="text-align: justify;text-indent:4em">
+						Com a benção de Deus e de nossos pais, no dia 16 de agosto de 2019 chegou a hora da próxima etapa do nosso relacionamento, nos tornamos noivos. Foi um momento onde aproximamos mais as nossas famílias e marcamos a data do tão sonhado momento, onde em nossas mentes nunca poderíamos imaginar que pudesse acontecer da forma que vem acontecendo. E por isto, viemos compartilhar um pouquinho com vocês, amigos e familiares.
+					</p>
+				</div>
+				<h1 class="titulo">Fotos do noivado</h1>
+				<div class="galeria-container">
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6042.jpg"><img src="img/albuns/noivado/DSC_6042-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6046.jpg"><img src="img/albuns/noivado/DSC_6046-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6047.jpg"><img src="img/albuns/noivado/DSC_6047-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6055.jpg"><img src="img/albuns/noivado/DSC_6055-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6056.jpg"><img src="img/albuns/noivado/DSC_6056-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6057.jpg"><img src="img/albuns/noivado/DSC_6057-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6059.jpg"><img src="img/albuns/noivado/DSC_6059-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6060.jpg"><img src="img/albuns/noivado/DSC_6060-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6061.jpg"><img src="img/albuns/noivado/DSC_6061-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6064.jpg"><img src="img/albuns/noivado/DSC_6064-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6066.jpg"><img src="img/albuns/noivado/DSC_6066-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6067.jpg"><img src="img/albuns/noivado/DSC_6067-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6071.jpg"><img src="img/albuns/noivado/DSC_6071-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6072.jpg"><img src="img/albuns/noivado/DSC_6072-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6074.jpg"><img src="img/albuns/noivado/DSC_6074-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6089.jpg"><img src="img/albuns/noivado/DSC_6089-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6090.jpg"><img src="img/albuns/noivado/DSC_6090-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6093.jpg"><img src="img/albuns/noivado/DSC_6093-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6100.jpg"><img src="img/albuns/noivado/DSC_6100-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6101.jpg"><img src="img/albuns/noivado/DSC_6101-thumb.jpg" /></a></div></div>
+					<div class="galeria-item"><div class="img-container"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6102.jpg"><img src="img/albuns/noivado/DSC_6102-thumb.jpg" /></a></div></div>
+					<div class="galeria-item-full"><div class="img-container-full"><a class="fancybox-thumbs" data-fancybox-group="noivado" href="img/albuns/noivado/DSC_6104.jpg"><img src="img/albuns/noivado/DSC_6104-thumb.jpg" /></a></div></div>
+				</div>
+			</div>
+		</div>
+		<div class="parallax" data-parallax-image="img/bg-noivado.jpg"></div>
+	</div>
+
+	<div class="container" id="padrinhos">
+		<div class="bg-black">
+			<div class="content-all">
+				<h1 class="titulo">Padrinhos da noiva</h1>
+				<div class="pessoas-galeria">
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem">
+							<img src="img/pm-paulo-gelsa.jpg" />
+							<p>Paulo e Gelsa</p>
+						</div>
+					</div>
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem">
+							<img src="img/avatar-full.jpg" />
+							<p>Elizangela e Roberval</p>
+						</div>
+					</div>
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem">
+							<img src="img/pm-taorges-adailane.jpg" />
+							<p>Taorges e Adailane</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/avatar.jpg" />
+							<p>Arisdete</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/p-valdemir.jpg" />
+							<p>Valdemir</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/p-marllone.jpg" />
+							<p>Marllone</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/m-daniele.jpg" />
+							<p>Daniele</p>
+						</div>
+					</div>
+				</div>
+					<h1 class="titulo">Padrinhos do noivo</h1>
+					<div class="pessoas-galeria">
+						<div class="pessoas-item-full">
+							<div class="pessoas-imagem">
+								<img src="img/pm-gilvan-marineide.jpg" />
+								<p>Gilvan e Marineide</p>
+							</div>
+						</div>
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem">
+							<img src="img/avatar-full.jpg" />
+							<p>Paulo e Larissa</p>
+						</div>
+					</div>
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem">
+							<img src="img/pm-gilberto-solange.jpg" />
+							<p>Gilberto e Solange</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/p-wesley.jpg" />
+							<p>Wesley</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/m-kelly.jpg" />
+							<p>Dhim Kelly</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/p-oseias.jpg" />
+							<p>Oséias</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/m-edlaine.jpg" />
+							<p>Edlaine</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="parallax" data-parallax-image="img/bg-padrinhos.jpg"></div>
+	</div>
+
+	<div class="container" id="pajens-daminhas">
+		<div class="bg-black">
+			<div class="content-all">
+				<h1 class="titulo">Pajens</h1>
+				<div class="pessoas-galeria">
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/avatar.jpg" />
+							<p>Mikael</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/avatar.jpg" />
+							<p>Felipe</p>
+						</div>
+					</div>
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem-menor">
+							<img src="img/avatar.jpg" />
+							<p>Samuel</p>
+						</div>
+					</div>
+				</div>
+				<h1 class="titulo">Floristas</h1>
+				<div class="pessoas-galeria">
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/f-rhuane.jpg" />
+							<p>Rhuane</p>
+						</div>
+					</div>
+					<div class="pessoas-item">
+						<div class="pessoas-imagem">
+							<img src="img/avatar.jpg" />
+							<p>Carolina</p>
+						</div>
+					</div>
+				</div>
+				<h1 class="titulo">Dama das alianças</h1>
+				<div class="pessoas-galeria">
+					<div class="pessoas-item-full">
+						<div class="pessoas-imagem">
+							<img src="img/da-luiza-raquel.jpg" />
+							<p>Luiza Raquel</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="parallax" data-parallax-image="img/bg-pajens-daminhas.jpg"></div>
+	</div>
+	
+	<div class="container" id="dicas">
+		<div class="bg-black">
+			<div class="content-all">
+				<h1 class="titulo">Dicas</h1>
+				<p class="p2" style="text-align: left; padding-bottom: 10px; width:100%;">
+							Para aqueles que tenham dúvidas, ficam aqui algumas dicas dos noivos:
+						</p>
+				<ul style="color: #FFF">
+					<li>
+						<p class="p2" style="text-align: justify; padding-bottom: 10px;">
+							Não se esqueça de confirmar a sua presença até 23 de dezembro de 2019. Nossa cerimônia será realizada em um espaço fechado e por isso precisamos garantir que todos os presentes tenham lugar para se acomodar e ficar confortáveis;
+						</p>
+					</li>
+					<li>
+						<p class="p2" style="text-align: justify; padding-bottom: 10px;">
+							Fique esperta: elegemos os tons marsala para as nossas madrinhas, dourado para as irmãs da noiva e rosê para as mães dos noivos;
+						</p>
+					</li>
+					<li>
+						<p class="p2" style="text-align: justify; padding-bottom: 10px;">
+							Fique ainda mais esperta: Fuja do Branco e do Off White. Lembre-se que essa é a cor do vestido da noiva. Não cometa essa gafe!
+						</p>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="parallax" data-parallax-image="img/bg-dicas.jpg" style="background-position: center top !important;"></div>
+	</div>
+
+	<div class="container" id="confirmar-presenca">
+		<div class="bg-black">
+			<div class="content-all">
+				<h1 class="titulo">Venha se alegrar conosco!</h1>
+				<p class="p2">Sua presença nos alegrará muito, então, não deixe de fazer parte desse momento único em nossas vidas.</p>
+				<p class="p2">Mas atenção! Você deverár confirmar até o dia 23 de dezembro de 2019.</p>
+				<a href="https://forms.gle/Jkb3VcmBiL4hKHLs8" target="_blank" id="btn-confirmar">Confirme sua presença</a>
+			</div>
+		</div>
+		<div class="parallax" data-parallax-image="img/bg-presenca.jpg"></div>
+	</div>
+
+	<div class="container" id="mapa">
+		<div class="bg-black">
+			<div class="content-all">
+				<h1 class="titulo">Local</h1>
+				<p class="p2">A cerimônia e festa acontecerá no Clube Recreativo de Pintadas. Daremos início às 19h, não se atrase!<br>
+				Endereço: Praça Paciência, s/n - Pintadas - BA<br>
+				
+				No mapa abaixo, você poderá localizar facilmente o local.</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.303966683519!2d-39.909892!3d-11.8139716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x714b312841279bd%3A0x86e321321d774770!2sClube%20Recreativo%20De%20Pintadas!5e0!3m2!1spt-BR!2sbr!4v1569279944654!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" id="frame-mapa"></iframe>
+			</div>
+		</div>
+		<div class="parallax" data-parallax-image="img/bg-mapa.jpg"></div>
+	</div>
+
+	<div class="container" id="recados">
+		<div class="bg-black">
+			<div class="content-all">
+				<h1 class="titulo">Recados!</h1>
+					<form id="formulario" class="formRecado">
+						<div class="formItem">
+							<label class="formLabel">Nome</label>
+							<input type="text" id="nome" placeholder="Digite seu nome" class="formInput">
+						</div>
+						<div class="formItem">
+							<label class="formLabel">E-mail</label>
+							<input type="text" id="email" placeholder="Digite seu e-mail" class="formInput">
+						</div>
+						<div class="formItem">
+							<label class="formLabel">Mensagem</label>
+							<textarea id="mensagem" rows="3" placeholder="Digite aqui sua mensagem..." class="formTextarea"></textarea>
+						</div>
+						<button type="submit" id="btnEnviar" class="formButtom">Enviar</button>
+					</form>
+				<div id="containerRecados">
+				</div>
+			</div>
+		</div>
+		<div class="parallax" data-parallax-image="img/bg-recados.jpg"></div>
+	</div>
+	
+	<script type="text/javascript" src="lib/jquery-3.4.1.min.js"></script>
+	<script src="lib/universal-parallax/universal-parallax.min.js"></script>
+	<script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script type="text/javascript" src="lib/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+	<script src="js/recados.js"></script>
+	<script src="js/galeria.js"></script>
+	<script src="js/onload.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
