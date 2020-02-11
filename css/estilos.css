@@ -1,0 +1,253 @@
+@font-face {
+  font-family: RougeScript;
+  src: url('../src/fonts/RougeScript-Regular.ttf')
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  background: radial-gradient(ellipse, #FFF 0%, #DDD 100%);
+  background-attachment: fixed;
+}
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#logo {
+  width: 60%;
+  max-width: 500px;
+  margin-bottom: 20px
+}
+.moldura {
+  position: fixed;
+  width: 130px
+}
+.a-top {
+  top: 20px
+}
+.a-left {
+  left: 20px
+}
+.a-right {
+  right: 20px
+}
+.a-bottom {
+  bottom:20px
+}
+.g-90 {
+  transform: rotate(90deg)
+}
+.g-180 {
+  transform: rotate(180deg)
+}
+.g-90a {
+  transform: rotate(-90deg)
+}
+.p1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  color: #c5935d;
+}
+h1 {
+  text-align: center;
+  font-family: RougeScript;
+  font-size: 50px;
+  padding: 0;
+  margin: 30px 0;
+  color:#946129;
+}
+.gallery{
+  width: calc(100% - 300px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px
+}
+.gallery a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(14% - 10px);
+  margin: 5px
+}
+.img-container {
+  padding: 0;
+  height: 0;
+  width:100%;
+  padding-bottom:100%;
+  background-color:#FFF;
+  position:relative;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.5)
+}
+.img-container img{
+display:inline-block;
+position:absolute;
+width: 100%;
+height: 100%;
+object-fit:cover;
+-webkit-transition: -webkit-transform .15s ease;
+-moz-transition: -moz-transform .15s ease;
+-o-transition: -o-transform .15s ease;
+-ms-transition: -ms-transform .15s ease;
+transition: transform .15s ease;
+}
+.img-container:hover img {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	z-index: 5;
+}
+.container-video {
+	position: relative;
+	width: calc(100% - 342px);
+	height: 0;
+	padding-bottom: calc(56.25% - 192px);
+	margin: 0 auto;
+}
+.container-video iframe {
+border: none;
+position: absolute;
+width: 100%;
+height: 100%;
+}
+.fotografo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+.fotografo p {
+  font-size: 18px;
+  color: #555;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+.fotografo img {
+  width: 200px;
+}
+@media (max-width:1800px){
+  .gallery a {
+    width: calc(16% - 10px);
+  }
+  .container-video {
+    width: calc(100% - 364px);
+    padding-bottom: calc(56.25% - 204px);
+  }
+}
+@media (max-width:1500px){
+  .gallery{
+    width: calc(100% - 330px);
+  }
+  .gallery a {
+    width: calc(20% - 10px);
+  }
+  .container-video {
+	width: calc(100% - 340px);
+	padding-bottom: calc(56.25% - 191px);
+}
+}
+@media (max-width:1100px){
+  .gallery a {
+    width:calc(25% - 10px);
+  }
+
+}
+@media (max-width:900px){
+  .gallery a {
+    width:calc(33% - 10px);
+  }
+  #logo {
+    width: 55%;
+  }
+    .container-video {
+	width: calc(100% - 346px);
+	padding-bottom: calc(56.25% - 194px);
+}
+}
+@media (max-width:800px){
+.moldura {
+  width:100px
+}
+.a-top{top:15px}
+.a-left{left:15px}
+.a-right{right:15px}
+.a-bottom{bottom:15px}
+.p1{font-size:24px}
+.p2 {font-size:18px}
+.gallery {
+  width: calc(100% - 250px);
+}
+.container-video {
+	width: calc(100% - 266px);
+	padding-bottom: calc(56.25% - 149px);
+}
+}
+@media (max-width:640px){
+  .gallery a {
+    width: calc(33% - 8px);
+    margin: 4px
+  }
+  .container-video {
+	width: calc(100% - 262px);
+	padding-bottom: calc(56.25% - 147px);
+}
+}
+@media (max-width:600px){
+.moldura{width:80px}
+.a-top{top:10px}
+.a-left{left:10px}
+.a-right{right:10px}
+.a-bottom{bottom:10px}
+.p1{font-size:18px}
+
+.p2{font-size:16px}
+.gallery {
+  width: calc(100% - 210px);
+}
+.fotografo {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.fotografo p {
+  font-size: 16px;
+}
+.fotografo img {
+  width: 150px;
+}
+  .container-video {
+	width: calc(100% - 222px);
+	padding-bottom: calc(56.25% - 124px);
+}
+}
+@media (max-width:500px){
+.gallery a {
+  width:calc(50% - 8px);
+  margin: 4px
+}
+#logo {
+  width: 50%;
+}
+.fotografo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.fotografo p {
+  font-size: 14px;
+}
+.fotografo img {
+  width: 120px;
+}
+.container-video {
+	width: calc(100% - 218px);
+	padding-bottom: calc(56.25% - 122px);
+}
+}
