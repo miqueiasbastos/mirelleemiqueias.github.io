@@ -5,7 +5,7 @@ $(function () {
     var galleryPreWedding = $('#pre-wedding a').simpleLightbox({
         showCounter: false
     });
-    var ggalleryCasamento = $('#casamento a').simpleLightbox({
+    var galleryCasamento = $('#casamento a').simpleLightbox({
         showCounter: false
     });
 });
