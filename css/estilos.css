@@ -25,7 +25,7 @@ html, body {
   margin-bottom: 20px
 }
 .moldura {
-  position: fixed;
+  position: absolute;
   width: 130px
 }
 .a-top {
@@ -63,7 +63,9 @@ h1 {
   color:#946129;
 }
 .gallery{
-  width: calc(100% - 300px);
+  width: calc(100% - 20px);
+  max-width: 1500px;
+  padding: 0 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -106,9 +108,15 @@ transition: transform .15s ease;
 	transform: scale(1.05);
 	z-index: 5;
 }
+.videobox{
+  width: calc(100% - 20px);
+  max-width: 1500px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
 .container-video {
-	position: relative;
-	width: calc(100% - 342px);
+  position: relative;
+  width: calc(100% - 40px);
 	height: 0;
 	padding-bottom: calc(56.25% - 192px);
 	margin: 0 auto;
@@ -135,45 +143,61 @@ height: 100%;
   width: 200px;
 }
 @media (max-width:1800px){
-  .gallery a {
-    width: calc(16% - 10px);
-  }
+  h1 { font-size: 48px;}
+  .gallery a { width: calc(16% - 10px); }
+  
   .container-video {
-    width: calc(100% - 364px);
-    padding-bottom: calc(56.25% - 204px);
+    width: calc(100% - 70px);
+    padding-bottom: calc(56.25% - 39px);
   }
 }
 @media (max-width:1500px){
+  h1 { font-size: 46px;}
   .gallery{
-    width: calc(100% - 330px);
+    max-width: 1200px;
+
+  }
+  .videobox {
+    max-width: 1200px;
   }
   .gallery a {
     width: calc(20% - 10px);
   }
   .container-video {
-	width: calc(100% - 340px);
-	padding-bottom: calc(56.25% - 191px);
+	width: calc(100% - 12px);
+	padding-bottom: calc(56.25% - 6px);
 }
 }
 @media (max-width:1100px){
+  h1 { font-size: 42px;}
+  .gallery{
+    max-width: 900px;
+
+  }
+  .videobox {
+    max-width: 900px;
+  }
   .gallery a {
     width:calc(25% - 10px);
   }
 
 }
 @media (max-width:900px){
-  .gallery a {
-    width:calc(33% - 10px);
+  h1 { font-size: 38px;}
+  .gallery{
+    max-width: 800px;
+
   }
+  .videobox {
+    max-width: 800px;
+  }
+  
   #logo {
     width: 55%;
   }
-    .container-video {
-	width: calc(100% - 346px);
-	padding-bottom: calc(56.25% - 194px);
-}
 }
 @media (max-width:800px){
+  h1 { font-size: 36px;}
 .moldura {
   width:100px
 }
@@ -182,26 +206,22 @@ height: 100%;
 .a-right{right:15px}
 .a-bottom{bottom:15px}
 .p1{font-size:24px}
-.p2 {font-size:18px}
-.gallery {
-  width: calc(100% - 250px);
-}
-.container-video {
-	width: calc(100% - 266px);
-	padding-bottom: calc(56.25% - 149px);
-}
+
+
 }
 @media (max-width:640px){
+  h1 { font-size: 32px;}
   .gallery a {
     width: calc(33% - 8px);
     margin: 4px
   }
   .container-video {
-	width: calc(100% - 262px);
-	padding-bottom: calc(56.25% - 147px);
+	width: calc(100% - 14px);
+	padding-bottom: calc(56.25% - 7px);
 }
 }
 @media (max-width:600px){
+  h1 { font-size: 30px;}
 .moldura{width:80px}
 .a-top{top:10px}
 .a-left{left:10px}
@@ -209,10 +229,7 @@ height: 100%;
 .a-bottom{bottom:10px}
 .p1{font-size:18px}
 
-.p2{font-size:16px}
-.gallery {
-  width: calc(100% - 210px);
-}
+
 .fotografo {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -223,31 +240,25 @@ height: 100%;
 .fotografo img {
   width: 150px;
 }
-  .container-video {
-	width: calc(100% - 222px);
-	padding-bottom: calc(56.25% - 124px);
-}
 }
 @media (max-width:500px){
-.gallery a {
-  width:calc(50% - 8px);
-  margin: 4px
-}
-#logo {
-  width: 50%;
-}
-.fotografo {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.fotografo p {
-  font-size: 14px;
-}
-.fotografo img {
-  width: 120px;
-}
-.container-video {
-	width: calc(100% - 218px);
-	padding-bottom: calc(56.25% - 122px);
-}
+  h1 {
+    font-size: 26px;
+  }
+  .gallery a {
+    margin: 3px
+  }
+  #logo {
+    width: 50%;
+  }
+  .fotografo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .fotografo p {
+    font-size: 14px;
+  }
+  .fotografo img {
+    width: 120px;
+  }
 }
